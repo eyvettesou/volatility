@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Home from './Home.js';
 import { Menu } from 'antd';
 import {
   BrowserRouter as Router,
@@ -18,13 +19,7 @@ class App extends Component {
     });
   }
 
-  home = () => {
-    return(
-      <div>
-        <h2>Hello</h2>
-      </div>
-    )
-  }
+  home = () => ( <Home /> )
 
   about = () => {
     return(
@@ -61,7 +56,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-logo">
+        <div className="App-header">
           logo goes here
         </div>
         <Router>
@@ -88,7 +83,7 @@ class App extends Component {
                 <Link to="/videos">VIDEOS</Link>
               </Menu.Item>
             </Menu>
-            <div className="App-photostream">
+            <div className="App-body">
               <Route exact path="/" component={this.home}/>
               <Route path="/about" component={this.about}/>
               <Route path="/artists" component={this.artists}/>

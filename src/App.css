@@ -2,20 +2,17 @@
 
 .App {
   text-align: center;
-  /*position: fixed;*/
   min-width: 320px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 200px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #ccc;
+  color: #595959;
+  font-size: 2.3em;
+  height: 80px;
   padding: 20px;
-  color: white;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .App-title {
@@ -32,9 +29,10 @@
   font-size: 1.5em;
 }
 
-.App-photostream {
+.App-body {
   margin: 1em;
-  height: 700px;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 .App-footer {
@@ -43,6 +41,12 @@
 
 .App-intro {
   font-size: large;
+}
+
+.Home-slideshow-images {
+  display: none;
+  max-width: 1363px;
+  width: 100%;
 }
 
 @keyframes App-logo-spin {

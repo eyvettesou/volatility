@@ -47,9 +47,10 @@
   display: none;
   max-width: 1363px;
   width: 100%;
+  animation: slideshow 2s;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes slideshow {
+  from {opacity: 0.2};
+  to {opacity: 1};
 }
